@@ -2,24 +2,22 @@ package per.edward.ninepatchavatar;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * 群聊头像
+ * 群聊九宫格头像
  * Created by Edward on 2017/1/15.
  */
 
 public class TribeAvatar extends ViewGroup {
 
-    public TribeAvatar(Context context, AttributeSet attrs) {
+    public TribeAvatar(Context context, AttributeSet attrs) throws Exception {
         this(context, attrs, 0);
     }
 
-    public TribeAvatar(Context context, AttributeSet attrs, int defStyleAttr) {
+    public TribeAvatar(Context context, AttributeSet attrs, int defStyleAttr) throws Exception {
         super(context, attrs, defStyleAttr);
-
     }
 
     @Override
@@ -31,7 +29,7 @@ public class TribeAvatar extends ViewGroup {
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         int childCount = getChildCount();
-        //
+        //五张图片之后（包含5张），每行的最大列数是3
         if (childCount >= 5) {
             putImg(childCount, 3);
         } else {
@@ -39,6 +37,13 @@ public class TribeAvatar extends ViewGroup {
         }
     }
 
+    /**
+     * 设置垂直
+     *
+     * @param childCount
+     * @param imgWidth
+     * @return
+     */
     private int setVertical(int childCount, int imgWidth) {
         //只有5张或者6张图的情况才需要垂直居中
         if (childCount == 5 || childCount == 6) {
@@ -49,21 +54,20 @@ public class TribeAvatar extends ViewGroup {
     }
 
     /**
-     * @param childCount     子控件总数
-     * @param lineBreakCount
+     * 摆放图片
+     *
+     * @param childCount 子控件总数
+     * @param columnMax  头像每列的最大数
      */
-    private void putImg(int childCount, int lineBreakCount) {
-        int imgWidth = getWidth() / lineBreakCount;
-        int imgHeight = getHeight() / lineBreakCount;
+    private void putImg(int childCount, int columnMax) {
+        int imgWidth = getWidth() / columnMax;
+        int imgHeight = getHeight() / columnMax;
         //每行增量
         int row = 0;
         //每列增量
         int column = 0;
-        LayoutParams layoutParams = new LayoutParams(imgWidth, imgHeight);
         for (int i = 1; i <= childCount; i++) {
             View view = getChildAt(i - 1);
-            //强制改变子控件的大小
-            view.setLayoutParams(layoutParams);
 
             //设置垂直居中
             int centerVertical = setVertical(childCount, imgWidth);
@@ -106,7 +110,7 @@ public class TribeAvatar extends ViewGroup {
                     view.layout(left, top, right, bottom);
                     column++;
                     //换行
-                    if (i % lineBreakCount == 0) {
+                    if (i % columnMax == 0) {
                         row++;
                         //将列增量初始化
                         column = 0;
@@ -120,5 +124,4 @@ public class TribeAvatar extends ViewGroup {
             }
         }
     }
-
 }

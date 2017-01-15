@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         SimpleDraweeView simpleDraweeViewTwo = (SimpleDraweeView) findViewById(R.id.img_two);
         SimpleDraweeView simpleDraweeViewThree = (SimpleDraweeView) findViewById(R.id.img_three);
 
-        simpleDraweeViewOne.setImageURI("https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3083693965,3642567609&fm=116&gp=0.jpg");
-        simpleDraweeViewTwo.setImageURI("http://img3.imgtn.bdimg.com/it/u=438871314,2276270985&fm=23&gp=0.jpg");
-        simpleDraweeViewThree.setImageURI("http://img5.imgtn.bdimg.com/it/u=1122938447,2979833550&fm=23&gp=0.jpg");
+        simpleDraweeViewOne.setImageURI("https://github.com/EdwardSituwende/NinePatchAvatar/blob/master/img/111.jpg?raw=true");
+        simpleDraweeViewTwo.setImageURI("https://github.com/EdwardSituwende/NinePatchAvatar/blob/master/img/222.jpg?raw=true");
+        simpleDraweeViewThree.setImageURI("https://github.com/EdwardSituwende/NinePatchAvatar/blob/master/img/333.jpg?raw=true");
     }
 }
