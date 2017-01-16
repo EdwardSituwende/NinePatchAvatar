@@ -11,13 +11,14 @@
         android:background="#ffffff"
         android:orientation="vertical">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
-            <per.edward.ninepatchavatar.TribeAvatar
+            <per.edward.tribeavatarlibrary.TribeAvatar
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
@@ -42,9 +43,9 @@
                     android:layout_height="30dp"
                     app:placeholderImage="@mipmap/ic_launcher" />
 
-            </per.edward.ninepatchavatar.TribeAvatar>
+            </per.edward.tribeavatarlibrary.TribeAvatar>
 
-            <per.edward.ninepatchavatar.TribeAvatar
+            <per.edward.tribeavatarlibrary.TribeAvatar
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
@@ -69,9 +70,9 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@mipmap/ddd" />
-            </per.edward.ninepatchavatar.TribeAvatar>
+            </per.edward.tribeavatarlibrary.TribeAvatar>
 
-            <per.edward.ninepatchavatar.TribeAvatar
+            <per.edward.tribeavatarlibrary.TribeAvatar
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
@@ -103,7 +104,7 @@
                     android:layout_height="30dp"
                     android:src="@mipmap/eee" />
 
-            </per.edward.ninepatchavatar.TribeAvatar>
+            </per.edward.tribeavatarlibrary.TribeAvatar>
         </LinearLayout>
 
         <LinearLayout
@@ -112,7 +113,7 @@
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
-            <per.edward.ninepatchavatar.TribeAvatar
+            <per.edward.tribeavatarlibrary.TribeAvatar
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
@@ -149,9 +150,9 @@
                     android:layout_height="30dp"
                     android:src="@mipmap/fff" />
 
-            </per.edward.ninepatchavatar.TribeAvatar>
+            </per.edward.tribeavatarlibrary.TribeAvatar>
 
-            <per.edward.ninepatchavatar.TribeAvatar
+            <per.edward.tribeavatarlibrary.TribeAvatar
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
@@ -193,9 +194,9 @@
                     android:layout_height="30dp"
                     android:src="@mipmap/ggg" />
 
-            </per.edward.ninepatchavatar.TribeAvatar>
+            </per.edward.tribeavatarlibrary.TribeAvatar>
 
-            <per.edward.ninepatchavatar.TribeAvatar
+            <per.edward.tribeavatarlibrary.TribeAvatar
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
@@ -242,7 +243,7 @@
                     android:layout_height="30dp"
                     android:src="@mipmap/hhh" />
 
-            </per.edward.ninepatchavatar.TribeAvatar>
+            </per.edward.tribeavatarlibrary.TribeAvatar>
         </LinearLayout>
 
         <LinearLayout
@@ -251,7 +252,7 @@
             android:gravity="center_horizontal"
             android:orientation="horizontal">
 
-            <per.edward.ninepatchavatar.TribeAvatar
+            <per.edward.tribeavatarlibrary.TribeAvatar
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
@@ -302,7 +303,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:src="@mipmap/iii" />
-            </per.edward.ninepatchavatar.TribeAvatar>
+            </per.edward.tribeavatarlibrary.TribeAvatar>
 
         </LinearLayout>
 

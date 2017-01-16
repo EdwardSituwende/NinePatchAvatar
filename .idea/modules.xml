@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NinePatchAvatar.iml" filepath="$PROJECT_DIR$/NinePatchAvatar.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tribeavatarlibrary/tribeavatarlibrary.iml" filepath="$PROJECT_DIR$/tribeavatarlibrary/tribeavatarlibrary.iml" />
     </modules>
   </component>
 </project>
