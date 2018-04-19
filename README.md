@@ -1,7 +1,5 @@
-## Android自定义控件---仿微信群聊(九宫格)头像
+#### Android自定义控件---仿微信群聊(九宫格)头像
 </br>
-### 博客http://blog.csdn.net/u012814441
-
 ### Demo效果图如下</br>
 ![image](https://github.com/EdwardSituwende/NinePatchAvatar/blob/master/img/abc123.jpg?raw=true)</br>
 ### 使用方法
@@ -68,3 +66,4 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
+### 博客http://blog.csdn.net/u012814441
